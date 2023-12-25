@@ -1,79 +1,40 @@
 <div align="center">
- 
-  <h1> MEDICAL RECORD SYSYTEM MAINTAINANCE USING JAVA AND Oracle</h1>
- 
- 
+ <h1>SWAG LABS Automation</h1>
 </div>
- 
+
 # Introduction
-- This program's objective is maintenance of medical records using JAVA-Jswing and ORACLE-Database Management.
- 
-- Additionaly, this program offers graphical user interfaces (GUI)
- 
-## Features
- 
-- A six-letter pin to login onto the maintenance page.
-- Add, view, edit, and delete records.
-- Finding BMI of patients.
- 
-## Requirements
-To get along with the challenge you need to have the following:
-- JAVA eclipse IDE(any version after 2018)
-- ORACLE Database with the table created in it
-- Custom Font (Optional,Mentioned below)
- 
-## NOTE
- 
-### Default setup
-- Make sure you have JDBC installed and configured.
-- The default username and password is set to 'admin'. To change password or the username, make changes in the code.
-- ORACLE user and passwd is 'SAM'and 'SRI4533' respectively, You might need to change in the main code for it to work on your system.
- 
-## Query for creating the table:
-- Execute this query in your sql command line or in your run sql command line.
-```sh
 
-CREATE TABLE  "MEDICAL_RECORDS"
-   (    "ADMN_NUMBER" NUMBER NOT NULL ENABLE,
-    "NAME" VARCHAR2(250),
-    "AGE" NUMBER NOT NULL ENABLE,
-    "GENDER" VARCHAR2(250),
-    "DATE_OF_BIRTH" VARCHAR2(250),
-    "HEIGHT" NUMBER,
-    "WEIGHT" NUMBER,
-    "BLOOD_GROUP" VARCHAR2(250),
-    "COVID_STATUS" VARCHAR2(250),
-    "COVID_VACCINATION_STATUS" VARCHAR2(250),
-    "PAST_HISTORY" VARCHAR2(250),
-    "MAJOR_ILLNESS" VARCHAR2(250),
-    "IMPLANTS" VARCHAR2(250),
-     CONSTRAINT "MEDICAL_RECORDS_PK" PRIMARY KEY ("ADMN_NUMBER") ENABLE
-   ) ;
+This project is focused on testing the Swag Labs application using the TestNG testing framework with the page object model.
+
+## Prerequisites
+
+Ensure you have the following tools installed before running the tests:
+
+- [Selenium WebDriver](https://www.selenium.dev/documentation/en/webdriver/)
+- [TestNG](https://testng.org/doc/)
+
+ <h1>Note:</h1> 
+
+The provided zip file contains all the necessary external JAR files and the Chrome driver. Additionally, ensure that you update all the existing paths in the code with your specific system paths for proper functionality.
+
+  <h1>Data Provider path:</h1>
+Please update the data provider path in the code to match your system path to enable the multiple login function in the code.
+
+   
+   <h1>Screenshot Functionality:</h1>
+In the Swagpages section of the code, wherever the pre-existing path is provided, replace it with your system path to ensure the functionality works.
+
+The paths requiring modification are explicitly marked in the code with the comment:
+```
+//Replace with your path
 ```
 
+## Test Execution
 
- 
-## Setup
-- I believe you have the motivation, a computer and a dream. In addition to that basic to intermediate level knowledge in JAVA and its Modules. If you have those, then you have everything to get started.
-or else i am afraid this is just too much for you my friend
- 
-### Download git repository
-- Download ZIP and extract
-  <div>OR<div>
-### Clone git repository
-Open git Bash.
-Change the current working directory to the location where you want the cloned directory.
-```sh
-$ git clone https://gitlab.com/mrms/teampro/-/blob/main/MRMS_Git
+1. Clone the repository:
 
-```
- 
-#### Fonts used
-- Arial
-- Italic Bold
- 
-## You can also run the main code in eclipse idle also
- 
-### A Project Made By members of
-- TEAMPRO
- 
+   ```bash
+   git clone https://gitlab.com/mrms/teampro/-/tree/Automation?ref_type=heads
+
+2. Download the repository
+   - Download ZIP and extract 
